@@ -35,6 +35,7 @@ def file_relay(msg):
 @itchat.msg_register(c.SHARING, isGroupChat=True)
 @validate_and_cache
 def sharing_relay(msg):
+    if msg['Url'] == '': return # bundled chat history not supported
     for cr in chatroom_names - {msg['FromUserName']}:
         yield itchat.send_msg(u"[%s] 分享了链接\n%s\n%s" % (msg['ActualNickName'], msg['FileName'], msg['Url']), cr), cr
 
