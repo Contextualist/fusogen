@@ -2,10 +2,11 @@
 
 **Fusogen** is a multi-way sync chatbot for WeChat. It helps users from different groups interact as if they are in the same group, by
 
-1. Propagate messages to other groups, with tagged username.
-2. (WIP) Handle inter-group `@` mention.
+1. Propagate messages to the other groups, tagged with usernames
+2. Synchronized message revokation
+2. (WIP) Handle inter-group `@` mention
 
-Fusogen uses [itchat](littlecodersh/ItChat) for WeChat web api.
+Fusogen uses [itchat](https://github.com/littlecodersh/ItChat) for WeChat web API.
 
 ## Quick start
 
@@ -27,7 +28,7 @@ Supported
 * Plain text
 * Image, video, file
 * Shared link
-* Custom stickers
+* Custom sticker
 
 Not implemented
 
@@ -36,6 +37,6 @@ Not implemented
 Not supported
 
 * Voice
-* Shop stickers
+* Shop sticker
 * Red package
 * Bundled chat history
